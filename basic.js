@@ -1,6 +1,6 @@
 // syntax for console log output
 console.log("Hello")
-var gen = "STring"
+var gen = "STring" //initialize and assign a variable to value
 
 
 // to write in html syntax
