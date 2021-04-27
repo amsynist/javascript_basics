@@ -51,3 +51,31 @@ var Eadables = {
 var mango = Object.create(Eadables) // duplicates Eadables with prototype object
 mango.type = "fruits" //changes the type of property of prototype object
 mango.displaytype() //we can access Eadables method as this is a prototype of Eadables
+
+
+//Deleting a Object Property
+
+var Tutor = {
+    name: "RAD",
+    teaches: ["C++", "Python"],
+    age: 30
+}
+//listing all properties before deletion
+var properties = " " // initializing a empty var/string
+for (props in Tutor) { // for each property in Tutor
+
+    properties += props + "    " //add property to the empty string
+
+}
+console.log(properties) //list all properties 
+
+//deleting a property of an object by using 'delete' keyword
+delete Tutor.age //deletes age property in Tutor
+properties = " "
+for (props in Tutor) {
+
+    properties += props + "    "
+
+
+}
+console.log(properties) //list all properties after deletion 
