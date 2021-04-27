@@ -70,10 +70,25 @@ switch (value) { // data of  value variable is passed to switch statement
 var subs = ["maths", "english", "social"] // assigning array of subjects
 var marks = [] //decalring a empty array
 var num1 //initializing a variable
-for (j = 0; j < subs.length; j++) { // for condition --> iterates from 0 and increments until array completes i.e, 0>1>2 where subs.length is 2
-    num1 = parseFloat(prompt("enter" + subs[j]))
+for (j = 0; j < subs.length; j++) { // for condition --> iterates from 0 index and increments until marks[index] completes i.e, 0>1>2 where subs.length is 2
+    num1 = parseFloat(prompt("enter  : " + subs[j])) // prompt to enter marks 
     marks[j] = num1 //assigns entered marks to empty array 
 }
 for (m in marks) { // iterates over each index of array i.e, marks[0],marks[1] ...
     console.log(marks[m]) // shows entered marks 
 }
+
+//while loop
+var nxt = 1
+//     // while (condition) // as long as the condition is true this block keep on executing until it returns false
+while (nxt < 5) { //checks if nxt is less than 5
+    document.write(nxt)
+    nxt++ // increments nxt by 1 for each execution so that it doesn't fall in forever or infinite loop
+}
+
+// // do-while loop
+var nxt1 = 1
+do { // executes this block first
+    document.write(nxt1)
+    nxt1++ //to increment for each execution to satisfy condition and stop infinite loop
+} while (nxt1 < 8) // checks if condition is true or false ,if true goes to do block again
